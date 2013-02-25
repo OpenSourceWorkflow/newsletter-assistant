@@ -1,0 +1,100 @@
+/*
+$Date: 2009-01-20 23:53:12 +0100 (Di, 20 Jan 2009) $
+$Revision: 217 $
+$Author: markusfalk $
+*/
+
+/*
+
+kuzrer clearfix:
+
+overflow: hidden;
+_display: inline-block;
+
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+	
+	@IE7
+	.clearfix {display:inline-block;}
+	@IE6
+	.clearfix {display:block;} 
+*/
+
+/* ________________________________________________________ reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+body {
+    background: ﻿#fff;
+}
+
+/* _________________________________________________ Layout zentrieren */
+
+
+div#container {
+	min-width: 870px;
+		/* @IE6 */
+		_text-align: center;
+	
+	margin: 20px auto;
+	padding: 0 25px 0 25px;
+}
+
+/* ________________________________________________________ Bereiche */
+
+iframe {
+    background-color: #fff;
+}
+
+.CodeMirror-line-numbers {
+    padding-right: 5px;
+    line-height: 16px;
+    text-align: right;
+}
+
+div#content {
+	clear: both;
+	overflow: auto;
+	    /* @IE6 */
+	    _text-align: left;
+}
+
+div#more_options {
+    margin-top: 30px;
+    padding-top: 10px;
+    overflow: auto;
+    border-top: 1px dotted #295563;
+    clear: both;
+}
+div.col {
+    margin-right: 50px;
+    overflow: auto;
+    float: left;
+}
+
+ul#errors {
+    padding: 5px 25px 5px 25px;
+    background: #D0742F;
+    color: #fff;
+}
+
+ul#infos {
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    right: 25px;
+    padding: 5px 25px 5px 25px;
+    background-color: #228811;
+    color: #fff;
+}

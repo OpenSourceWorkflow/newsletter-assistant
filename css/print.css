@@ -1,0 +1,34 @@
+/*
+Visiongraphix Webdesign
+www.visiongraphix.de
+
+$Date: 2009-01-20 23:53:12 +0100 (Di, 20 Jan 2009) $
+$Revision: 217 $
+$Author: Administrator $
+*/
+
+@import "content.css";
+
+/* ________________________________________________ Navigation ausblenden */
+
+a#skiptonavi,
+a#skiptocontent,
+div#header ul,
+div#footer ul 
+{
+	display: none;
+}
+
+/* ____________________________________________________________ Logo */
+
+div#header img {
+	float: right;
+	border: 0;
+}
+
+
+/* ____________________________________________________________ Typo */
+
+h2 {
+	clear: both;
+}

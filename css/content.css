@@ -1,0 +1,327 @@
+/*
+$Date: 2009-06-19 13:08:43 +0200 (Fr, 19 Jun 2009) $
+$Revision: 329 $
+$Author: markusfalk $
+*/
+
+/* _______________________________________________________ Typographie */
+
+body {
+	font-family: Trebuchet MS, Arial, Helvetica, FreeSans, sans-serif;
+	color: #534E40;
+	font-size: 0.75em;
+}
+
+p {
+	line-height: 22px;
+}
+
+h1 {
+	font-size: 1.33em;
+	margin-left: 15px;
+	color: #295563;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 1.17em;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted silver;
+	cursor: help;
+}
+
+fieldset, form, ul, #hints, p {
+    margin-bottom: 15px;
+}
+
+
+fieldset, input {
+    padding: 5px;
+}
+
+
+#setup, fieldset, input, button, textarea, ul, #hints, iframe {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+span {
+    vertical-align: top;
+    font-size: 0.75em;
+}
+
+p.info {
+    margin: 0 15px 5px 15px;
+}
+
+/* ________________________________________________________ Navigation */
+
+a:link,
+a:visited  {
+    color: #ccc;
+}
+a:active,
+a:hover,
+a:focus {
+    color: #999;
+    text-decoration: none;
+}
+
+#html_container a {
+    text-decoration: none;
+    border: none;
+}
+
+/* aktive Zustände */
+select:active,
+select:focus,
+textarea:active,
+textarea:focus,
+input:active,
+input:focus,
+CodeMirror-wrapping:active iframe,
+CodeMirror-wrapping:focus iframe,
+#content iframe:active,
+#content iframe:focus {
+    background-color: #FEFFD9;
+}
+
+#toggle_management:hover,
+#toggle_management:active,
+#toggle_management:focus,
+#toggle_plain:hover,
+#toggle_plain:active,
+#toggle_plain:focus,
+#toggle_hints:hover,
+#toggle_hints:active,
+#toggle_hints:focus,
+button:hover,
+button:active,
+button:focus {
+    color: #FEFFD9;
+}
+
+
+#html_container ul {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+#html_container ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 10px;
+}
+
+#html_container ul li a{
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    padding: 2px;
+    color: #534E40;
+}
+
+/* ___________________________________________________________  setup */
+
+#setup {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    padding: 15px;
+}
+
+#setup a{
+    position: relative;
+    background: #295563;
+    color: white;
+    display: block;
+    padding: 1px 5px 1px 5px;
+    width: 100px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/* ___________________________________________________________  hinweise*/
+
+
+#hints ul {
+    padding: 5px 15px 0 15px;
+}
+#hints {
+    background: #fff;
+    border: 1px solid #DBEBF0;
+    color: #D0742F;
+    position: relative;
+    min-height: 15px;
+}
+
+#hints, fieldset {
+        padding: 5px 15px 5px 15px;
+}
+
+#toggle_hints,
+#toggle_management,
+#toggle_plain {
+    border: none;
+    position: absolute;
+    right: 30px;
+    top:2px;
+    display: block;
+    height: 15px;
+    width: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#toggle_management {
+    background-color: #295563;
+}
+
+#toggle_plain {
+    background-color: #534E40;
+}
+
+#toggle_hints {
+    right: 15px;
+    top: 5px;
+    background-color: #D0742F;
+}
+
+/* ___________________________________________________________ Formular */
+
+form {
+    overflow: hidden;
+    padding-bottom: 1px;
+}
+
+label {
+    line-height: 20px;
+    margin: 0 10px 0 0;
+    float: left;
+    display: block;
+}
+
+#html_container label {
+    float: none;
+}
+
+#management label {
+    width: 100px;
+}
+
+#rec label {
+    float: left;
+}
+
+#rec input {
+    width: 89%;
+    display: block !important;
+    float: right;
+}
+
+textarea {
+    width: 100%;
+}
+
+
+button {
+    position: relative;
+    cursor: pointer;
+	_cursor: hand;
+    color: white;
+    padding: 0 5px 0 5px;
+    min-width: 100px;
+}
+
+#setup a:active,
+button:active {
+    top: 1px;
+}
+
+#management button {
+    background: #295563;
+    padding: 1px 5px 1px 5px;
+}
+
+#management input {
+    padding: 2px 5px 2px 5px;
+}
+
+select {
+    min-width: 160px;
+    margin-right: 5px;
+}
+
+#feedbackform button,
+form button#absenden {
+    position: relative;
+    float: right;
+    width: 200px;
+    background: #534E40;
+    color: ﻿#fff;
+    padding: 5px;
+}
+
+input {
+    margin-right: 5px;
+}
+
+input.hidden {
+    display: none;
+}
+
+fieldset {
+    position: relative;
+    background: #DAD7CF;
+    min-height: 20px
+}
+
+#setup,
+#management {
+    background: #DBEBF0;
+}
+
+/* ___________________________________________________________ Feedback */
+
+#cboxContent {
+    border: 2px solid #666;
+}
+
+#feedbackform textarea,
+#cboxContent {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+#cboxContent #cboxClose {
+    right: 10px;
+    bottom: 10px;
+
+}
+
+#feedbackform textarea {
+    border: 1px solid #999;
+    width: 508px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
