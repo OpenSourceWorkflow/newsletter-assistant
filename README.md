@@ -8,3 +8,4 @@ ToDo
 
 * Documentation
 * new interface
+* optional: remove HTML parsing 
