@@ -40,10 +40,10 @@
 
     /*
      * relativer Pfad zum root-Verzeichnis,
-     * beginnt und endet mit Slash "/" bei Unterverzeichnissen (z.B.: "/newsletter_assistent/"),
+     * beginnt und endet mit Slash '/' bei Unterverzeichnissen (z.B.: '/newsletter_assistent/'),
      * sonst ist das root-Verzeichnis nur ein Slash
      */
-    $GLOBALS['NA_CONFIG']['na_path'] = "/";
+    $GLOBALS['NA_CONFIG']['na_path'] = '/';
 
     /*
      * Die Software kann auch ohne zu speichern (ohne Datenbank) verwendet werden.
