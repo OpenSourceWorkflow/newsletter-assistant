@@ -279,13 +279,13 @@ class Controller {
                         $subject_project_partial = Model::getProjectName($request['project']);
 
                         $connection = Model::connect();
-                        
+
                         if(get_magic_quotes_gpc()){
                             $html_s = stripslashes($request['html']);
                             $plain_s = stripslashes($request['plain']);
                         } else {
-                            $html_s = mysql_real_escape_string($html, $connection);
-                            $plain_s = mysql_real_escape_string($plain, $connection);
+                            $html_s = $request['html'];
+                            $plain_s = $request['plain'];
                         }
 
                         self::send($request['recipient'], $html_s, $plain_s, $subject_project_partial[0]['name']);
@@ -355,4 +355,5 @@ class Controller {
     }
 
 }
+
 ?>
