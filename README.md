@@ -1,11 +1,4 @@
-newsletter-assistant
+Newsletter Assistant
 ====================
 
-Programm for editing and sending HTML mail templates.
-
-ToDo
-----
-
-* Documentation
-* new interface
-* optional: remove HTML parsing 
+Programm for editing and sending HTML mail templates to test newsletters.
