@@ -155,7 +155,7 @@ class Controller {
             $mail->AddAddress($recipient[$i]);
         }
 
-        $mail->Subject = $subject_project_partial . ' ' . $GLOBALS['NA_CONFIG']['subject'];
+        $mail->Subject = $subject_project_partial . (empty(!$GLOBALS['NA_CONFIG']['subject'])? ' ' . $GLOBALS['NA_CONFIG']['subject'] : '');
         $mail->Body = $html;
         $mail->AltBody= $plain;
         $mail->WordWrap = $GLOBALS['NA_CONFIG']['wordWrap'];
