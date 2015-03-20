@@ -158,7 +158,7 @@ class Controller {
         $mail->Subject = $subject_project_partial . " " . $GLOBALS['NA_CONFIG']['subject'];
         $mail->Body = $html;
         $mail->AltBody= $plain;
-        $mail->WordWrap = 50;
+        $mail->WordWrap = $GLOBALS['NA_CONFIG']['wordWrap'];
 
         if(!$mail->Send()) {
             array_push(Model::$errors, array('errors'=>"Beim Versenden der E-Mail ist ein Fehler aufgetreten: " . $mail->ErrorInfo));

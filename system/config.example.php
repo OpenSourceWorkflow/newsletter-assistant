@@ -51,4 +51,9 @@
      */
     $GLOBALS['NA_CONFIG']['versionize'] = true;
 
+    /*
+     * Set word wrap (integer, 0 means word wrap is disabled)
+     */
+    $GLOBALS['NA_CONFIG']['wordWrap'] = 0;
+
 ?>
