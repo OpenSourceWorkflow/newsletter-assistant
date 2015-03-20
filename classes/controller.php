@@ -150,6 +150,9 @@ class Controller {
         $mail->From = $GLOBALS['NA_CONFIG']['senderMail'];
         $mail->FromName = $GLOBALS['NA_CONFIG']['senderName'];
 
+        $mail->Sender = $GLOBALS['NA_CONFIG']['senderMail'];
+        $mail->AddReplyTo($GLOBALS['NA_CONFIG']['senderMail'], $GLOBALS['NA_CONFIG']['senderName']);
+
         $recipient = preg_split("/[\s]*[,][\s]*/", $recipient);
         for($i = 0; $i < sizeof($recipient); $i++){
             $mail->AddAddress($recipient[$i]);
