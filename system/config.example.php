@@ -56,4 +56,29 @@
      */
     $GLOBALS['NA_CONFIG']['wordWrap'] = 0;
 
+    /**
+     * Method to send mail: (»mail«, »sendmail«, or »smtp«).
+     */
+    $GLOBALS['NA_CONFIG']['mailTransport'] = 'mail';
+
+    /**
+     * Optional - If »mailTransport« is »sendmail«
+     *
+     * - Set the path of the sendmail program
+     */
+    $GLOBALS['NA_CONFIG']['sendmailPath'] = '/usr/sbin/sendmail';
+
+    /**
+     * Optional - If »mailTransport« is »smtp«
+     * Wrong data here results in faulty requests to the mail server.
+     * You can find the resulting error messages in the mail server log.
+     *
+     * - Set the SMTP host (e.g. "localhost;smtp1.example.com:25;smtp2.example.com").
+     * - Set the username
+     * - Set the password
+     */
+    $GLOBALS['NA_CONFIG']['smtpHost'] = 'localhost';
+    $GLOBALS['NA_CONFIG']['smtpUsername'] = '';
+    $GLOBALS['NA_CONFIG']['smtpPassword'] = '';
+
 ?>

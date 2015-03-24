@@ -147,9 +147,16 @@ class Controller {
         $mail = new PHPMailer();
         $mail->IsHTML(true);
         $mail->CharSet = 'utf-8';
+        $mail->Mailer = $GLOBALS['NA_CONFIG']['mailTransport'];
+        $mail->Sendmail = $GLOBALS['NA_CONFIG']['sendmailPath'];
+        $mail->Host = $GLOBALS['NA_CONFIG']['smtpHost'];
+        $mail->SMTPAuth = (!empty($GLOBALS['NA_CONFIG']['smtpUsername']) || !empty($GLOBALS['NA_CONFIG']['smtpPassword']))? true : false;
+        $mail->Username = $GLOBALS['NA_CONFIG']['smtpUsername'];
+        $mail->Password = $GLOBALS['NA_CONFIG']['smtpPassword'];
+        $mail->SMTPDebug = false;
+
         $mail->From = $GLOBALS['NA_CONFIG']['senderMail'];
         $mail->FromName = $GLOBALS['NA_CONFIG']['senderName'];
-
         $mail->Sender = $GLOBALS['NA_CONFIG']['senderMail'];
         $mail->AddReplyTo($GLOBALS['NA_CONFIG']['senderMail'], $GLOBALS['NA_CONFIG']['senderName']);
 
