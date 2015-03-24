@@ -35,7 +35,7 @@
      * Ist beides nicht möglich, sollte $GLOBALS['NA_CONFIG']['versionize']
      * auf false gesetzt werden.
      */
-    $GLOBALS['NA_CONFIG']['version'] = '2.0';
+    $GLOBALS['NA_CONFIG']['version'] = '3.0';
     $GLOBALS['NA_CONFIG']['checkForUpdates'] = true;
 
     /*
